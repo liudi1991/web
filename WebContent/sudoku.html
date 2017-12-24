@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>九宫格页面</title>
+<script src="asserts/lib/js/jquery-1.8.0.min.js"></script>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	height: 900px;
+	width: 1200px;
+	margin: 10px auto;
+}
+
+div {
+	float: left;
+	margin: 5px;
+	height: 30%;
+	width: 30%;
+	margin: 10px;
+}
+
+#topleft {
+	background-color: aqua;
+}
+
+#topcenter {
+	background-color: black;
+}
+
+#topright {
+	background-color: blue;
+}
+
+#centerleft {
+	background-color: fuchsia;
+}
+
+#center {
+	background-color: gray;
+}
+
+#centerright {
+	background-color: green;
+}
+
+#bottemleft {
+	background-color: maroon;
+}
+
+#bottemcenter {
+	background-color: navy;
+}
+
+#bottemright {
+	background-color: olive;
+}
+</style>
+</head>
+<body style="text-align: center">
+	<div id=container>
+	12344
+		<div id=topleft></div>
+		<div id=topcenter></div>
+		<div id=topright></div>
+		<div id=centerleft></div>
+		<div id=center></div>
+		<div id=centerright></div>
+		<div id=bottemleft></div>
+		<div id=bottemcenter></div>
+		<div id=bottemright></div>
+	</div>
+	<button>点击</button>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function() {
+				$("#container div").css("background-color","red");
+			});
+		});
+	</script>
+</body>
+</html>

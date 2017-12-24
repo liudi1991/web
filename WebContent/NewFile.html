@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sudoku</title>
+<style type="text/css">
+.divcss5 {
+	position: relative;
+	width: 400px;
+	height: 200px;
+	border: 1px solid #000
+}
+/* 定义父级position:relative 为就认为是绝对定位声明吧 */
+.divcss5-a {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 10px;
+	top: 10px;
+	background: #000
+}
+/* 使用绝对定位position:absolute样式 并且使用left top进行定位位置 */
+.divcss5-b {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 15px;
+	bottom: 13px;
+	background: #00F
+}
+/* 使用绝对定位position:absolute样式 并且使用right bottom进行定位位置 */
+</style>
+</head>
+<body>
+	<div class="divcss5">
+		<div class="divcss5-a"></div>
+		<div class="divcss5-b"></div>
+	</div>
+</body>
+</html>
